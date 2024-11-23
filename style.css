@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/fundo.jpg);
+    color: rgb(0, 22, 108);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.607);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input {
+    padding: 1rem;
+    font-size: 1.2rem;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    margin: 1rem;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Feedback */
+#feedback {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+#resetGame {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    width: 80%;
+    max-width: 400px;
+}
+
+#resetGame:hover {
+    background-color: #45a049;
+}
+
+/* Palpite e número */
+#Palpite {
+    margin-top: 1rem;
+}
+
+#numero {
+    font-size: 6rem;
+    margin-top: 1rem;
+    color: rgb(0, 22, 108);
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 2%;
+    }
+
+    #container {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    input, button, #resetGame {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #feedback {
+        font-size: 1.2rem;
+    }
+
+    #numero {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    input, button, #resetGame {
+        width: 70%;
+        font-size: 0.9rem;
+    }
+
+    #numero {
+        font-size: 3rem;
+    }
+
+    #feedback {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Número secreto | jogo adivinha número</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+
+                <div id="container">
+                    <h1>Adivinhe o Número</h1>
+                    <p><b>Estou pensando em um número entre 1 e 200...</b></p>
+                    <h1 id="numero">?</h1>
+                    <div id="Palpite">
+                        <input type="number" id="guessInput" placeholder="Digite seu palpite">
+                        <button id="submitGuess">Enviar Palpite</button>
+                    </div>
+                    <p id="feedback"></p>
+                    <p id="attempts">Tentativas: 0</p>
+                    <button id="resetGame" style="display:none;">Jogar Novamente</button>
+                </div>
+            <script src="script.js">
+            </script>
+        </body>
+</html>
